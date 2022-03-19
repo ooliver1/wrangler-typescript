@@ -13,15 +13,13 @@
     "sourceMap": true,
     "esModuleInterop": true,
     "types": [
-      "@cloudflare/workers-types",
-      "@types/jest",
-      "@types/service-worker-mock",
-      "@types/node-fetch"
+      "@cloudflare/workers-types"
     ]
   },
   "include": [
     "src",
-    "types"
+    "types",
+    "types/env.d.ts"
   ],
   "exclude": [
     "node_modules",
