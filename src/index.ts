@@ -1,5 +1,6 @@
-import { handleRequest } from "./handler";
+export async function handleRequest(request: Request, env: Env): Promise<Response> {
+  return new Response(`request method: ${request.method}`);
+}
 
-addEventListener("fetch", (event: FetchEvent) => {
-  event.respondWith(handleRequest(event.request));
-});
+const worker: ExportedHandler<Env> = { fetch: handleRequest };
+export default worker;
