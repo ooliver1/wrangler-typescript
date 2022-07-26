@@ -35,6 +35,6 @@
     "typescript": "^4.7.3"
   },
   "dependencies": {
-    "jest-environment-miniflare": "^2.5.0"
+    "jest-environment-miniflare": "^2.6.0"
   }
 }
